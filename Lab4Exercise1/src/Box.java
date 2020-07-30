@@ -19,10 +19,7 @@ public class Box {
 		box.printBox();
 
 		System.out.println();
-		box.printBox('c');
-		System.out.println();
-		System.out.println("Print c again.");
-		System.out.println();
+
 		box.printBox('c');
 
 	}

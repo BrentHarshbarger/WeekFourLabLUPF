@@ -2,7 +2,6 @@
 public class Box {
 	// Required for the entire class of Box
 	int size = 0;
-	
 
 	public static void main(String[] args) {
 		// Lewis University - Programming Fundamentals Lab 4 Exercise 1
@@ -13,16 +12,18 @@ public class Box {
 		// printing to the screen
 		// -------------------------------------------------------------------------------------------------------------
 
-
 		Box box = new Box();
 
 		box.size = 5; // Sets the rows and columns of the box.printBox
-		
+
 		box.printBox();
-		
+
 		System.out.println();
 		box.printBox('c');
-	
+		System.out.println();
+		System.out.println("Print c again.");
+		System.out.println();
+		box.printBox('c');
 
 	}
 
@@ -40,10 +41,9 @@ public class Box {
 
 		}
 	}
-	
-	public void printBox (char c) {
-		
-		
+
+	public void printBox(char c) {
+
 		// The outer loop prints the rows of the box
 		for (int row = 1; row <= size; row++) {
 
@@ -57,5 +57,5 @@ public class Box {
 
 		}
 	}
-	
+
 }
